@@ -13,7 +13,8 @@ async def humhai():
     await bot.send_file(
         LOGGER,
         
-        caption=f"BOT IS START FOR FUCK GROUPS")
+        caption=f"BOT IS START FOR FUCK GROUPS",
+        )
 except Exception as e:
     LOGS.info(str(e))
 
