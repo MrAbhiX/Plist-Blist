@@ -8,6 +8,10 @@ import telethon.utils
 
 
 LOGS = getLogger(__name__)
+BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
+BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
+
+
 
 os.system("pip install -U telethon")
 
