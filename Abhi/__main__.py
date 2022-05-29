@@ -22,7 +22,3 @@ async def humhai():
         LOGS.info(str(e))
 
 bot.loop.create_task(humhai())
-if len(argv) not in (1, 3, 4):
-    bot.disconnect()
-else:
-    bot.run_until_disconnected()
