@@ -21,4 +21,4 @@ async def humhai():
     except Exception as e:
         LOGS.info(str(e))
 
-bot.loop.create_task(humhai())
+bot.start()
