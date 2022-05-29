@@ -2,6 +2,7 @@ from logging import getLogger
 import os
 from Abhi import bot, LOGGER
 import asyncio
+from sys import argv
 
 LOGS = getLogger(__name__)
 
