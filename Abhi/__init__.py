@@ -10,10 +10,11 @@ STRING_SESSION = os.environ.get("STRING_SESSION", None)
 LOGGER = int(os.environ.get("LOGGER", None))
 SUDO_COMMAND_HAND_LER = os.environ.get("SUDO_COMMAND_HAND_LER", r"\.")
 COMMAND_HAND_LER = os.environ.get("COMMAND_HAND_LER", r".")
-SUDO_COMMAND_HAND_LER = os.environ.get("SUDO_COMMAND_HAND_LER", r"\.")
+UB_BLACK_LIST_CHAT = set(int(x) for x in os.environ.get("UB_BLACK_LIST_CHAT", "").split())
+SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "").split())
 
-
-
+CMD_LIST = {}
+SUDO_LIST = {}
 
 
 
