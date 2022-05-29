@@ -1,6 +1,6 @@
 from logging import getLogger
 import os
-from Abhi import bot, LOGGER, APP_ID, APP_HASH
+from Abhi import bot, LOGGER, APP_ID, API_HASH
 import asyncio
 from sys import argv
 from telethon import TelegramClient
