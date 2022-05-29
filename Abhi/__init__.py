@@ -7,6 +7,7 @@ APP_ID = int(os.environ.get("APP_ID", 6))
     # 6 is a placeholder
 API_HASH = os.environ.get("API_HASH", "eb06d4abfb49dc3eeb1aeb98ae0f581e")
 STRING_SESSION = os.environ.get("STRING_SESSION", None)
+LOGGER = int(os.environ.get("LOGGER", None))
 
 
 if STRING_SESSION:
