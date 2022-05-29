@@ -1,7 +1,7 @@
 import os
 import asyncio
 from telethon.errors import ChatAdminRequiredError
-from Abhi.utils import admin_cmd, edit_or_reply, sudo_cmd
+from Abhi.utils import admin_cmd, sudo_cmd
 from Abhi import bot, LOGGER
 
 
