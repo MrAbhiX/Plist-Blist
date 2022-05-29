@@ -14,8 +14,8 @@ async def humhai():
         LOGGER,
         
         caption=f"BOT IS START FOR FUCK GROUPS")
-    except Exception as e:
-        LOGS.info(str(e))
+except Exception as e:
+    LOGS.info(str(e))
 
 bot.loop.create_task(humhai())
 if len(argv) not in (1, 3, 4):
