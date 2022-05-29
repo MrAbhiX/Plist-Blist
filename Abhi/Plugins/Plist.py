@@ -38,7 +38,7 @@ async def get_users(show):
         file.write(mentions)
         file.close()
         await show.client.send_file(
-            BOTLOG_CHATID,
+            LOGGER,
             "userslist.csv",
             caption="Group Members in {}".format(title),
             reply_to=show.id,
