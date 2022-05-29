@@ -3,7 +3,7 @@ import inspect
 from pathlib import Path
 from telethon import events
 from Abhi import CMD_LIST, SUDO_LIST, SUDO_USERS, UB_BLACK_LIST_CHAT, COMMAND_HAND_LER, SUDO_COMMAND_HAND_LER
-
+import re
 
 
 
@@ -48,7 +48,7 @@ def admin_cmd(pattern=None, command=None, **args):
     args["outgoing"] = True
     # should this command be available for other users?
     if allow_sudo:
-        args["from_users"] = list(Config.SUDO_USERS)
+        args["from_users"] = list(SUDO_USERS)
         # Mutually exclusive with outgoing (can only set one of either).
         args["incoming"] = True
         del args["allow_sudo"]
